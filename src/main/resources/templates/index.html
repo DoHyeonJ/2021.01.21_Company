@@ -1,91 +1,21 @@
 <!DOCTYPE html>
-<html lang="UTF-8">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css ">
-    <style>
-        @font-face {
-            font-family: 'Jal_Onuel';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+<head th:replace="fragments.html :: head">
 
-        a {
-            color: black;
-        }
-        /* 사이드바 */
-
-        .sidenav {
-            position: fixed;
-            width: 80px;
-            height: 100%;
-        }
-
-        footer {
-            background-color: #f1f1f1;
-            width: 100%;
-            height: 200px;
-        }
-
-        .first-section {
-            width: 100%;
-            height: 535px;
-        }
-    </style>
 </head>
 
 <body>
-<!-- header -->
-<header>
-    <!-- 사이드바 -->
-    <nav class="col-sm-3 sidenav">
-        <ul class="nav nav-pills nav-stacked" style="margin-top: 300px; border: 1px black solid;">
-            <li>
-                <a href="#"><img src="twiter.png" alt="" style="width:100%;"></a>
-            </li>
-            <li>
-                <a href="#"><img src="facebook.png" alt="" style="width:100%;"></a>
-            </li>
-            <li>
-                <a href="#"><img src="instagram.png" alt="" style="width:100%;"></a>
-            </li>
-            <li>
-                <a href="#"><img src="youtube.png" alt="" style="width:100%;"></a>
-            </li>
-        </ul>
-    </nav>
-    <!-- //사이드바 -->
-</header>
-<!-- //header -->
 
 <!-- container -->
 <div class="container">
-
-    <!-- 상단 nav -->
-    <nav class="navbar" style="margin-top: 70px;">
-            <span class="home-btn">
-                <a href="/">
-                    <img src="" style="width: 110px; height: 110px;" alt="">
-                </a>
-            </span>
-        <ul class="nav nav-pills navbar-right" style="margin-top: 20px;font-size: 25px; font-family: 'Jal_Onuel';">
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Notice</a></li>
-            <li role="presentation"><a href="#">QnA</a></li>
-            <li role="presentation"><a href="#">Store</a></li>
-        </ul>
-    </nav>
-    <!-- //상단 nav -->
-    <section class="first-section">
-
-    </section>
+    <header th:replace="fragments.html :: header"></header>
+    <nav th:replace="fragments.html :: top-nav"></nav>
+    <section class="first-section"></section>
 </div>
 <!-- //container -->
-
-<footer>
-
-</footer>
+<footer th:replace="fragments.html :: footer"></footer>
 
 </body>
 
