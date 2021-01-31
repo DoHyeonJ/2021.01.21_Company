@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments.html :: head"></head>
+<body>
+<div class="container">
+  <div class="connect-main">
+    <a href="/"><img src="/images/connect-main.png"></a>
+  </div>
+  <div class="jumbotron">
+    <h1>안녕하세요.</h1>
+    <h1>문의사항이 있으시다면 아래의 번호 또는 Email 을 통하여</h1>
+    <h1>연락주시기 바랍니다.</h1><br>
+    <div class="con-num-email">
+      <h2>Email : </h2>
+      <h2>Number : </h2>
+      <h2>Fax : </h2>
+    </div>
+  </div>
+</div>
+
+<footer th:replace="fragments.html :: footer"></footer>
+
+</body>
+</html>
