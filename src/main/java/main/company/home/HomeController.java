@@ -14,5 +14,8 @@ public class HomeController {
 
     @GetMapping("/connect")
     public String connect() { return "/connect"; }
+
+    @GetMapping("/notice")
+    public String notice() { return "/notice"; }
     
 }

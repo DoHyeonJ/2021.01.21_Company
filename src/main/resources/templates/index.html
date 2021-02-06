@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments.html :: head"></head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <ul>
+            <li> <a class="top-nav" href="https://smartstore.naver.com/haoringmall/category/ALL?cp=1">Store</a></li>
+            <li> <a class="top-nav" href="/connect">Connect</a> </li>
+            <li> <a class="top-nav" href="">Notice</a> </li>
+            <li> <a class="top-nav" href="">QnA</a> </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Slider -->
+<div id="slider">
+    <div class="slides">
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <h1>#Hao Ring Mall</h1>
+                    <h2>구매대행 업체입니다.</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/images/banner1.png">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <h1>Hao Ring Mall</h1>
+                    <h2>구매대행 업체입니다.</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/images/banner.png">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <h1>Hao Ring Mall</h1>
+                    <h2>구매대행 업체입니다.</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/images/banner.png">
+            </div>
+        </div>
+        <div class="slider">
+            <div class="legend"></div>
+            <div class="content">
+                <div class="content-txt">
+                    <h1>Hao Ring Mall</h1>
+                    <h2>구매대행 업체입니다.</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/images/banner.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>[ Best Items ]</h1>
+    <!--  메인 Card  -->
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    1인 쇼파
+                </div>
+                <img src="images/item1.png" alt="" />
+                <div class="card-body">
+                    <p class="card-text">카페분위기의 쇼파</p>
+                    <a href="https://smartstore.naver.com/haoringmall/products/5154677010" class="btn btn-dark" target="_blank">구매하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    G-바겐 레고
+                </div>
+                <img src="images/item2.png" alt="" />
+                <div class="card-body">
+                    <p class="card-text">메르세데스 벤츠 AMG G-바겐</p>
+                    <a href="https://smartstore.naver.com/haoringmall/products/5182176617" class="btn btn-dark" target="_blank">구매하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    1+1 머그잔
+                </div>
+                <img src="images/item3.png" alt="" />
+                <div class="card-body">
+                    <p class="card-text">자취,신혼 1+1 예쁜 머그잔</p>
+                    <a href="https://smartstore.naver.com/haoringmall/products/5260088135" class="btn btn-dark" target="_blank">구매하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="credits">
+    <p><a href="https://do-hyeon.tistory.com/" target="blank">My website</a> | <a href="https://github.com/DoHyeonJ" target="blank">My GitHub</a></p>
+</div>
+
+<footer th:replace="fragments.html :: footer"></footer>
+
+</body>
+
+</html>
