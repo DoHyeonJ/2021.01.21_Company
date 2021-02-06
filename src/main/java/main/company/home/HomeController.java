@@ -11,11 +11,5 @@ public class HomeController {
     public String home() {
         return "/index";
     }
-
-    @GetMapping("/connect")
-    public String connect() { return "/connect"; }
-
-    @GetMapping("/notice")
-    public String notice() { return "/notice"; }
     
 }

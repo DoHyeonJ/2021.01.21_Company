@@ -15,9 +15,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/admin/**").hasRole("ADMIN")	//Admin 권한이 있는 경우 접근 허용
                 .antMatchers("/user/**").hasRole("USER")	//User 권한이 있는 경우 접근 허용
-                .antMatchers("/", "/home", "/resources/**").permitAll().anyRequest().permitAll(); //해당 URL은 전체 접근 허용
+                .antMatchers("/", "/home", "/resources/**", "/admin").permitAll().anyRequest().permitAll(); //해당 URL은 전체 접근 허용
     }
 
     @Bean
