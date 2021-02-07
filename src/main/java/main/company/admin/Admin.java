@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Builder @AllArgsConstructor @NoArgsConstructor
 public class Admin {
 
-    @Id
+    @Id @GeneratedValue
     public Long idx; //고유 id
 
     @Column(unique = true)
