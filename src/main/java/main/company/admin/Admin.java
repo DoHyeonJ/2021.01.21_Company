@@ -20,6 +20,9 @@ public class Admin {
     private String pw; // 관리자 pw
 
     @Column
-    private LocalDateTime joinAt; //가입일
+    private LocalDateTime joinAt; // 가입일
+
+    @Column
+    private String CompanyName; // 회사명
 
 }
