@@ -6,12 +6,12 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Getter @Setter @EqualsAndHashCode(of = "id")
+@Getter @Setter
 @Builder @AllArgsConstructor @NoArgsConstructor
 public class Admin {
 
     @Id @GeneratedValue
-    public Long idx; //고유 id
+    private Long idx; //고유 id
 
     @Column(unique = true)
     private String id; // 관리자 id
