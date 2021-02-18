@@ -23,6 +23,9 @@ public class Board {
     private String name;
 
     @Column
+    private String comment;
+
+    @Column
     private LocalDateTime register;
 
 }
