@@ -11,21 +11,21 @@ import java.time.LocalDateTime;
 public class Board {
 
     @Id @GeneratedValue
-    private Long idx;
+    private Long idx; // 고유값
 
     @Column
-    private String subject;
+    private String subject; // 제목
 
     @Column
-    private String content;
+    private String content; // 내용
 
     @Column
-    private String name;
+    private String name; // 작성자
 
     @Column
-    private String comment;
+    private String comment; // 댓글
 
     @Column
-    private LocalDateTime register;
+    private LocalDateTime register; // 작성일
 
 }

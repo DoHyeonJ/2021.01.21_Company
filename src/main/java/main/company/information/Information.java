@@ -6,12 +6,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.swing.plaf.SpinnerUI;
 
 @Entity
 @Getter @Setter
 @Builder @AllArgsConstructor @NoArgsConstructor
-public class information {
+public class Information {
 
     @Id @GeneratedValue
     public Long idx; // 고유값 ( 1개의 idx 사용 예정 )
@@ -27,5 +26,5 @@ public class information {
     
     @Column 
     public String license; // 사업자 등록번호
-    
+
 }
