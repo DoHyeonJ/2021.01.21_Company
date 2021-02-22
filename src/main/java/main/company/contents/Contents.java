@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Contents {
 
     @Id @GeneratedValue
-    private Long idx;
+    private Long idx; // 고유값
 
     @Column
     private String comment; // 본문

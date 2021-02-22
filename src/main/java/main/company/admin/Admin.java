@@ -22,7 +22,4 @@ public class Admin {
     @Column
     private LocalDateTime joinAt; // 가입일
 
-    @Column
-    private String CompanyName; // 회사명
-
 }

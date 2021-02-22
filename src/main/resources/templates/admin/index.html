@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,7 +43,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Settings</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="/settings">
 <!--                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>-->
                                 기본설정
                             </a>
@@ -108,17 +108,7 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid">
-                        <h1 class="mt-4">기본설정</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">
-                                <p>회사명 : </p><input type="text" placeholder="ex) 우리회사">
-                                <p>대표번호 : </p><input type="text" placeholder="ex) 02-123-4567">
-                                <p>Email : </p><input type="text" placeholder="ex) email@eamil.com">
-                                <p>사업자 등록번호 : </p><input type="text" placeholder="123-45-678-91011">
-                            </li>
-                        </ol>
-                    </div>
+
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
