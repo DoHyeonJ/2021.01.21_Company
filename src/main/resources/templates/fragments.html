@@ -41,7 +41,7 @@
     </ul>
 </nav>
 
-<div th:fragment="adminSideNav">
+<div th:fragment="adminSideNavSettings">
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -113,6 +113,18 @@
         </div>
         <div id="layoutSidenav_content">
             <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">기본설정</h1>
+                    <form th:action="@{/settings}" th:object="${informationForm}" method="post" novalidate>
+                        <label>회사명 : <input id="name" type="text" th:field="*{name}" placeholder="ex) 우리회사"></label>
+                        <label>대표번호 : <input id="number" type="text" th:field="*{number}" placeholder="ex) 02-123-4567"></label>
+                        <label>Email : <input id="email" type="text" th:field="*{email}" placeholder="ex) email@eamil.com"></label>
+                        <label>사업자 등록번호 : <input id="license" th:field="*{license}" type="text" placeholder="123-45-678-91011"></label>
+                        <div class="">
+                            <button class="" type="submit" aria-describedby="submitHelp">설정변경</button>
+                        </div>
+                    </form>
+                </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
