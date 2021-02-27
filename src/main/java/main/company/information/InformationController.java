@@ -21,12 +21,12 @@ public class InformationController {
         return "/admin/settings";
     }
 
-    @PostMapping("/settings")
+    @PostMapping("/settings") // 기본설정 입력
     public String settings(@Valid InformationForm informationForm) {
 
         Information information = Information.builder()
                 .name(informationForm.getName())
-                .email(informationForm.getEmail())
+                .number(informationForm.getNumber())
                 .email(informationForm.getEmail())
                 .license(informationForm.getLicense())
                 .build();
