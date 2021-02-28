@@ -78,6 +78,7 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid">
+                <!--초기설정된 DB 데이터 보여주고 버튼 수정하기로 변경하기-->
                 <h1 class="mt-4">기본설정</h1>
                 <form th:action="@{/settings}" th:object="${informationForm}" method="post" novalidate>
                     <label>회사명 : <input id="name" type="text" th:field="*{name}" placeholder="ex) 우리회사"></label>
@@ -88,6 +89,14 @@
                         <button class="" type="submit" aria-describedby="submitHelp">설정변경</button>
                     </div>
                 </form>
+            </div>
+            <div class="container-fluid">
+                <h1 class="mt-4">공지사항 & FAQ</h1>
+<!--                <form th:action="" th:object="" method="" novalidate>-->
+<!--                    <div class="">-->
+<!--                        <button class="" type="submit" aria-describedby="submitHelp">설정변경</button>-->
+<!--                    </div>-->
+<!--                </form>-->
             </div>
         </main>
         <footer class="py-4 bg-light mt-auto">
