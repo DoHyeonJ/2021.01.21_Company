@@ -21,4 +21,7 @@ public class InformationForm {
     @NotBlank
     private String license;
 
+    @NotBlank
+    private String address;
+
 }

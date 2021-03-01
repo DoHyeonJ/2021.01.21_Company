@@ -29,6 +29,7 @@ public class InformationController {
                 .number(informationForm.getNumber())
                 .email(informationForm.getEmail())
                 .license(informationForm.getLicense())
+                .address(informationForm.getAddress())
                 .build();
 
         Information addInformation = informationService.addSettings(information);
